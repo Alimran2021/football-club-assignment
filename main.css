@@ -16,6 +16,7 @@ body{
      background: blue;
      justify-content: center;
      padding-top: 64px;
+     padding-bottom: 56px;
     }
 
 .copa-america-container {
@@ -40,8 +41,11 @@ body{
 .copa-banner img {
     width: 547px;
     height: 438px;
+    transition:.5s;
 }
-
+.copa-banner img:hover {
+    transform: scale(1.1);
+}
 .live-titles .live-title {
     border: none;
     font-size: 16px;
@@ -169,7 +173,10 @@ main {
     align-items: center;
     justify-content: center;
 }
-
+/* -------------------------------
+    media quary start here 
+----------------------------------*/
+/* for mobile device */
 @media only screen and (max-width:688px){
     #main-header {
         width:100%;
